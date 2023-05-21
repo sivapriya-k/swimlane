@@ -1,0 +1,19 @@
+.board {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.lane {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 25%;
+}
+
+.lane:not(:last-child) {
+    border-right: 1px solid;
+}
